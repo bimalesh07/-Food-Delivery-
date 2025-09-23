@@ -6,7 +6,7 @@ const [Theme, setTheme] = useState(()=>localStorage.getItem('theme')||'light')
 
   return (
     <>
-    <Navbar Theme={Theme} setTheme={setTheme}/>
+    <Navbar/>
 
     </>
   )
