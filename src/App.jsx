@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Placeorder from "./pages/Placeorder/Placeorder";
 import Cart from "./pages/Cart/Cart";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
           <Route path="/order" element={<Placeorder />}></Route>
         </Routes>
       </div>
+      <Footer/>
     </>
   );
 }
