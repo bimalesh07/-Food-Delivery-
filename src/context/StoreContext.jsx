@@ -3,8 +3,6 @@ import {food_list} from "../assets/assets"
 import { useState,useEffect } from "react";
 
 export const StoreContext = createContext(null);
-
-
 const StoreContextProvider = (props) => {
   const [CartItems, setCartItems] = useState({})
 
@@ -24,12 +22,9 @@ const removeFromCart = (itemId) =>{
 
 }
 useEffect(() => {
-  console.log (CartItems)
   
-
- 
+  console.log (CartItems)
 }, [CartItems])
-
 
   const contextValue = {
     food_list,
